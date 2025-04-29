@@ -19,20 +19,16 @@ const About = () => {
             <div>
               <h2 className="text-2xl font-bold mb-4">Our Story</h2>
               <p className="mb-4 text-muted-foreground">
-                HackForNepal was founded in 2023 with a simple mission: to harness the power of technology to address 
-                the unique challenges facing Nepal. Our founder, a tech enthusiast and social entrepreneur, 
-                recognized the immense untapped talent within Nepal's developer community.
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum officia atque accusamus fugit distinctio est molestias cumque commodi quos. Dignissimos explicabo fugit eos vel repudiandae ad tempora nostrum dolore assumend.
               </p>
               <p className="text-muted-foreground">
-                What started as a small gathering of like-minded individuals has grown into Nepal's premier hackathon, 
-                bringing together hundreds of participants from across the country and beyond.
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum est animi sed voluptatum iure omnis totam ipsam assumenda quos voluptates perspiciatis, corrupti ullam incidunt, consequatur commodi aliquam, nulla tempora quis?
               </p>
             </div>
             <div className="bg-card p-6 rounded-lg shadow-sm">
               <h2 className="text-2xl font-bold mb-4">Our Mission</h2>
               <p className="mb-4 text-muted-foreground">
-                We believe in the transformative power of technology to address social, environmental, and economic 
-                challenges. HackForNepal aims to:
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Deserunt ducimus ut cumque officiis quasi mollitia maiores! Voluptates eum enim saepe error aliquid voluptatum molestiae quae magni, veniam a nesciunt perferendis.
               </p>
               <ul className="list-disc pl-5 space-y-2 text-muted-foreground">
                 <li>Foster innovation and entrepreneurship in Nepal's tech ecosystem</li>
@@ -52,8 +48,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Sustainable Development</h3>
                 <p className="text-muted-foreground">
-                  Creating technology solutions that support Nepal's sustainable development goals, from clean energy to 
-                  sustainable agriculture and responsible consumption.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis, aliquid alias quidem architecto nihil inventore facere et minima odit quis aliquam voluptatibus, vel numquam pariatur ullam amet earum non? Repellendus.
                 </p>
               </div>
               
@@ -63,8 +58,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Digital Inclusion</h3>
                 <p className="text-muted-foreground">
-                  Developing tools and platforms that expand digital access and literacy across Nepal's diverse 
-                  communities, ensuring no one is left behind in the digital age.
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tenetur, quae sapiente! Alias eum numquam qui labore voluptas reprehenderit eveniet nihil, earum a quae recusandae ex? Commodi qui tenetur expedita saepe!
                 </p>
               </div>
               
@@ -74,8 +68,7 @@ const About = () => {
                 </div>
                 <h3 className="text-xl font-semibold mb-3">Cultural Preservation</h3>
                 <p className="text-muted-foreground">
-                  Using technology to document, preserve, and promote Nepal's rich cultural heritage, from languages and 
-                  traditions to historical sites and artistic expressions.
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint molestias explicabo rerum. Fugit saepe corrupti est consequuntur maiores, ducimus odit earum nobis provident consectetur nemo blanditiis eius minima delectus minus.
                 </p>
               </div>
             </div>
@@ -88,7 +81,7 @@ const About = () => {
                 <div className="w-24 h-24 rounded-full bg-nepal-blue/10 mx-auto mb-4 flex items-center justify-center">
                   <span className="text-nepal-blue text-2xl font-bold">AP</span>
                 </div>
-                <h3 className="font-semibold">Arun Poudel</h3>
+                <h3 className="font-semibold">Someone</h3>
                 <p className="text-sm text-muted-foreground">Founder & Director</p>
               </div>
               
@@ -96,7 +89,7 @@ const About = () => {
                 <div className="w-24 h-24 rounded-full bg-nepal-blue/10 mx-auto mb-4 flex items-center justify-center">
                   <span className="text-nepal-blue text-2xl font-bold">SM</span>
                 </div>
-                <h3 className="font-semibold">Sita Maharjan</h3>
+                <h3 className="font-semibold">SOmeone</h3>
                 <p className="text-sm text-muted-foreground">Program Coordinator</p>
               </div>
               
@@ -104,7 +97,7 @@ const About = () => {
                 <div className="w-24 h-24 rounded-full bg-nepal-blue/10 mx-auto mb-4 flex items-center justify-center">
                   <span className="text-nepal-blue text-2xl font-bold">RG</span>
                 </div>
-                <h3 className="font-semibold">Raj Gurung</h3>
+                <h3 className="font-semibold">Someone</h3>
                 <p className="text-sm text-muted-foreground">Technical Lead</p>
               </div>
             </div>

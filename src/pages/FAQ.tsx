@@ -19,7 +19,7 @@ const FAQ = () => {
         },
         {
           question: "When and where will HackForNepal take place?",
-          answer: "HackForNepal 2025 will take place on June 1-2, 2025 at the Nepal Innovation Hub in Kathmandu. The event runs for a full 48 hours, though participants are welcome to take breaks as needed."
+          answer: "HackForNepal 2025 will take place on June , 2025 at the Nepal Innovation Hub in NCIT, Lalitpur. The event runs for a full 48 hours, though participants are welcome to take breaks as needed."
         },
         {
           question: "Who can participate in HackForNepal?",

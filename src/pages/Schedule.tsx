@@ -7,16 +7,16 @@ import { Calendar } from "lucide-react";
 const Schedule = () => {
   const scheduleData = {
     day1: [
-      { time: "08:00 AM", event: "Registration & Breakfast", description: "Check-in and enjoy breakfast while networking with fellow participants" },
-      { time: "09:30 AM", event: "Opening Ceremony", description: "Welcome address, rules explanation, and theme announcement" },
-      { time: "10:30 AM", event: "Team Formation", description: "Find teammates or finalize your existing team" },
-      { time: "11:00 AM", event: "Hacking Begins", description: "Start building your innovative solutions" },
-      { time: "01:00 PM", event: "Lunch Break", description: "Refuel with a delicious lunch" },
-      { time: "02:00 PM", event: "Workshop: UI/UX Design", description: "Learn about effective design principles for your project" },
-      { time: "04:00 PM", event: "Mentor Sessions", description: "One-on-one sessions with industry experts" },
-      { time: "07:00 PM", event: "Dinner", description: "Enjoy dinner with fellow participants" },
-      { time: "08:00 PM", event: "Evening Activities", description: "Fun games and networking activities" },
-      { time: "Onwards", event: "Overnight Hacking", description: "Continue working on your projects" }
+      { time: "08:00 AM", event: "Check in", description: "Check-in and enjoy breakfast while networking with fellow participants" },
+      { time: "08:30 AM", event: "Opening Ceremony", description: "Welcome address, rules explanation, and theme announcement" },
+      { time: "9:30 AM", event: "Coding", description: "Coding" },
+      { time: "11:00 AM", event: "Lunch", description: "Start building your innovative solutions" },
+      { time: "12:00 PM", event: "Mentoring round", description: "Refuel with a delicious lunch" },
+      { time: "03:00 PM", event: "Snacks", description: "Learn about effective design principles for your project" },
+      { time: "06:00 PM", event: "Fun Session", description: "One-on-one sessions with industry experts" },
+      { time: "08:00 PM", event: "Dinner", description: "Enjoy dinner with fellow participants" },
+      { time: "10:00 PM", event: "Good Night", description: "Sleep Well Boys" },
+
     ],
     day2: [
       { time: "08:00 AM", event: "Breakfast", description: "Start your day with a hearty breakfast" },
@@ -29,13 +29,17 @@ const Schedule = () => {
       { time: "06:30 PM", event: "Judges' Deliberation", description: "Judges evaluate all projects" },
       { time: "07:00 PM", event: "Awards Ceremony", description: "Winners announced and prizes distributed" },
       { time: "08:00 PM", event: "Closing Dinner", description: "Celebrate your achievements with a closing dinner" }
+    ],
+    day3: [
+      { time: "08:00 AM", event: "Breakfast", description: "Start your day with a hearty breakfast" },
+      { time: "09:00 AM", event: "Workshop: Pitch Perfect", description: "Learn how to effectively present your project" }, 
     ]
   };
 
   const venueDetails = {
-    name: "Nepal Innovation Hub",
-    address: "Kathmandu Central, Thamel",
-    facilities: ["High-speed WiFi", "24/7 power backup", "Dedicated workspaces", "Relaxation areas", "Tech support"]
+    name: "Nepal College of Information Technology",
+    address: "Balkumari, Lalitpur",
+    facilities: ["High-speed WiFi", "24/7 power backup", "Dedicated workspaces", "Tech support"]
   };
   
   return (

@@ -6,7 +6,7 @@ import { Link } from 'react-router-dom';
 export default function HeroSection() {
   // Set hackathon date - example: 2 months from now
   const hackathonDate = new Date();
-  hackathonDate.setMonth(hackathonDate.getMonth() + 2);
+  hackathonDate.setMonth(hackathonDate.getMonth() + 1);
   
   return (
     <div className="relative min-h-screen flex flex-col items-center justify-center pt-16 pb-12 px-4">
