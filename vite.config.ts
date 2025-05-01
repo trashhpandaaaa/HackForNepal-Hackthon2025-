@@ -18,9 +18,5 @@ export default defineConfig(({ mode }) => ({
     alias: {
       "@": path.resolve(__dirname, "./src"),
     },
-<<<<<<< HEAD
   },
-=======
-  }
->>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 }));
