@@ -9,30 +9,30 @@ const Schedule = () => {
     day1: [
       { time: "08:00 AM", event: "Check in", description: "Check-in and enjoy breakfast while networking with fellow participants" },
       { time: "08:30 AM", event: "Opening Ceremony", description: "Welcome address, rules explanation, and theme announcement" },
-      { time: "9:30 AM", event: "Coding", description: "Coding" },
+      { time: "9:00 AM", event: "Coding", description: "Find teammates or finalize your existing team" },
       { time: "11:00 AM", event: "Lunch", description: "Start building your innovative solutions" },
-      { time: "12:00 PM", event: "Mentoring round", description: "Refuel with a delicious lunch" },
+      { time: "12:00 PM", event: "Mentoring Round", description: "Refuel with a delicious lunch" },
       { time: "03:00 PM", event: "Snacks", description: "Learn about effective design principles for your project" },
-      { time: "06:00 PM", event: "Fun Session", description: "One-on-one sessions with industry experts" },
+      { time: "Evening", event: "Fun Session", description: "One-on-one sessions with industry experts" },
       { time: "08:00 PM", event: "Dinner", description: "Enjoy dinner with fellow participants" },
-      { time: "10:00 PM", event: "Good Night", description: "Sleep Well Boys" },
-
+      { time: "Onwards", event: "Goodnight", description: "Continue working on your projects" }
     ],
     day2: [
-      { time: "08:00 AM", event: "Breakfast", description: "Start your day with a hearty breakfast" },
-      { time: "09:00 AM", event: "Workshop: Pitch Perfect", description: "Learn how to effectively present your project" },
-      { time: "10:30 AM", event: "Progress Check-in", description: "Share your progress with mentors" },
-      { time: "12:00 PM", event: "Lunch", description: "Midday refuel" },
-      { time: "01:00 PM", event: "Final Sprint", description: "Last few hours of development" },
-      { time: "04:00 PM", event: "Hacking Ends", description: "Submit your projects" },
-      { time: "04:30 PM", event: "Presentations Begin", description: "Teams showcase their projects to judges" },
-      { time: "06:30 PM", event: "Judges' Deliberation", description: "Judges evaluate all projects" },
-      { time: "07:00 PM", event: "Awards Ceremony", description: "Winners announced and prizes distributed" },
-      { time: "08:00 PM", event: "Closing Dinner", description: "Celebrate your achievements with a closing dinner" }
+      { time: "07:30 AM", event: "Breakfast", description: "Good Morning snacks" },
+      { time: "11:00 AM", event: "Lunch", description: "Hungry? Grab your lunches" },
+      { time: "12:00 AM", event: "Mentoring Round", description: "Lemme do it for you" },
+      { time: "03:00 PM", event: "Snacks", description: "Midday refuel" },
+      { time: "Evening", event: "Fun Session", description: "Fun during the evening" },
+      { time: "08:00 PM", event: "Dinner", description: "Dinner time" },
+      { time: "Night", event: "Goodnight", description: "Raise ye! O Tarnished!!" },
     ],
     day3: [
-      { time: "08:00 AM", event: "Breakfast", description: "Start your day with a hearty breakfast" },
-      { time: "09:00 AM", event: "Workshop: Pitch Perfect", description: "Learn how to effectively present your project" }, 
+      { time: "07:30 AM", event: "Breakfast", description: "Good Morning snacks" },
+      { time: "09:00 AM", event: "Code Freeze", description: "Hungry? Grab your lunches" },
+      { time: "09:30 AM", event: "Lunch", description: "Lemme do it for you" },
+      { time: "11:00 PM", event: "Judging Round", description: "Midday refuel" },
+      { time: "03:00 PM", event: "Winner Announcement", description: "Fun during the evening" },
+      { time: "At the end of the time", event: "Prize Distribution", description: "Dinner time" },
     ]
   };
 
@@ -69,21 +69,22 @@ const Schedule = () => {
                 </div>
                 <div className="p-4 bg-muted rounded-md">
                   <h3 className="font-semibold mb-1">Hackathon Dates</h3>
-                  <p className="text-nepal-red font-medium">June 1-2, 2025</p>
+                  <p className="text-nepal-red font-medium">Jestha 15-16, 2082</p>
                   <p className="text-sm text-muted-foreground mt-1">48-hour hackathon event</p>
                 </div>
                 <div className="p-4 bg-muted rounded-md">
                   <h3 className="font-semibold mb-1">Post-Event Showcase</h3>
-                  <p className="text-nepal-red font-medium">June 15, 2025</p>
+                  <p className="text-nepal-red font-medium">Jestha 17, 2082</p>
                   <p className="text-sm text-muted-foreground mt-1">Public showcase of winning projects</p>
                 </div>
               </div>
             </div>
             
             <Tabs defaultValue="day1" className="w-full">
-              <TabsList className="grid w-full grid-cols-2 mb-8">
-                <TabsTrigger value="day1">Day 1 (June 1)</TabsTrigger>
-                <TabsTrigger value="day2">Day 2 (June 2)</TabsTrigger>
+              <TabsList className="grid w-full grid-cols-3 mb-8">
+                <TabsTrigger value="day1">Day 1</TabsTrigger>
+                <TabsTrigger value="day2">Day 2</TabsTrigger>
+                <TabsTrigger value="day3">Day 3</TabsTrigger>
               </TabsList>
               
               <TabsContent value="day1" className="pt-4">
@@ -106,6 +107,23 @@ const Schedule = () => {
               <TabsContent value="day2" className="pt-4">
                 <div className="space-y-8">
                   {scheduleData.day2.map((item, index) => (
+                    <div key={index} className="flex gap-6">
+                      <div className="w-28 shrink-0 text-right">
+                        <span className="text-nepal-red font-semibold">{item.time}</span>
+                      </div>
+                      <div className="flex-1 border-l-2 border-muted pl-6 pb-8 relative">
+                        <div className="absolute w-3 h-3 bg-nepal-blue rounded-full -left-[7px] top-1"></div>
+                        <h3 className="text-lg font-medium mb-1">{item.event}</h3>
+                        <p className="text-muted-foreground">{item.description}</p>
+                      </div>
+                    </div>
+                  ))}
+                </div>
+              </TabsContent>
+
+              <TabsContent value="day3" className="pt-4">
+                <div className="space-y-8">
+                  {scheduleData.day3.map((item, index) => (
                     <div key={index} className="flex gap-6">
                       <div className="w-28 shrink-0 text-right">
                         <span className="text-nepal-red font-semibold">{item.time}</span>

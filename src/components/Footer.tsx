@@ -66,7 +66,7 @@ export default function Footer() {
               </li>
               <li className="text-gray-300">
                 <span className="block">Location:</span>
-                <span>Kathmandu, Nepal</span>
+                <span>Balkumari, Lalitpur</span>
               </li>
             </ul>
           </div>

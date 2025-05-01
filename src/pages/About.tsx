@@ -24,11 +24,20 @@ const About = () => {
                 <Users className="text-nepal-red w-8 h-8" />
               </span>
             </div>
-            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-nepal-red to-nepal-blue bg-clip-text text-transparent">
-              About HackForNepal
-            </h1>
+
+                    <motion.h1 
+                      className="text-4xl md:text-6xl font-bold text-center mb-6"
+                      initial={{ opacity: 0, scale: 0.9 }}
+                      animate={{ opacity: 1, scale: 1 }}
+                      transition={{ duration: 0.7, delay: 0.1 }}
+                    >
+                      <span className="text-black">About </span>
+                      <span className="text-nepal-red">Hack</span>
+                      <span className="text-nepal-blue">ForNepal</span>
+                    </motion.h1>
+
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Learn more about Nepal's biggest hackathon and how we're working to drive innovation and positive change.
+              Learn more about hackathon and how we're working to drive innovation and positive change.
             </p>
           </motion.div>
           
@@ -115,33 +124,40 @@ const About = () => {
                 <span className="w-10 h-10 bg-nepal-red/10 flex items-center justify-center rounded-full mr-3">
                   <Medal className="text-nepal-red w-5 h-5" />
                 </span>
-                2025 Focus Areas
+                Focus Areas
               </h2>
               <div className="h-px w-full max-w-xs bg-gradient-to-l from-transparent to-nepal-blue/30"></div>
             </div>
             
-            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="flex grid-cols-1 md:grid-cols-4 gap-8">
               {[
                 {
-                  title: "Sustainable Development",
-                  description: "Creating technology solutions that support Nepal's sustainable development goals, from clean energy to sustainable agriculture and responsible consumption.",
+                  title: "Health Care",
+                  description: "Leveraging technology to improve healthcare access, delivery, and outcomes in Nepal, especially in remote areas.",
                   color: "nepal-red",
                   number: 1,
                   delay: 0.1
                 },
                 {
-                  title: "Digital Inclusion",
-                  description: "Developing tools and platforms that expand digital access and literacy across Nepal's diverse communities, ensuring no one is left behind in the digital age.",
+                  title: "AgriTech",
+                  description: "Innovating solutions for sustainable agriculture, food security, and rural development through technology.",
                   color: "nepal-blue",
                   number: 2,
                   delay: 0.2
                 },
                 {
-                  title: "Cultural Preservation",
-                  description: "Using technology to document, preserve, and promote Nepal's rich cultural heritage, from languages and traditions to historical sites and artistic expressions.",
+                  title: "E-Governance",
+                  description: "Enhancing government services and citizen engagement through digital platforms and solutions.",
                   color: "nepal-red",
                   number: 3,
                   delay: 0.3
+                },
+                {
+                  title: "Open Innovation",
+                  description: "Encouraging collaboration and knowledge sharing among developers, researchers, and entrepreneurs to drive innovation.",
+                  color: "nepal-red",
+                  number: 4,
+                  delay: 0.4
                 }
               ].map((area, index) => (
                 <motion.div 
