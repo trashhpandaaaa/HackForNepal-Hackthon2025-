@@ -1,17 +1,10 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 import {
   Accordion,
   AccordionContent,
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
-<<<<<<< HEAD
-=======
 import { motion } from "@/components/ui/motion";
->>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 
 export default function FAQSection() {
   const faqItems = [
@@ -48,35 +41,17 @@ export default function FAQSection() {
   return (
     <div className="py-24 bg-muted">
       <div className="container px-4 mx-auto">
-<<<<<<< HEAD
-        <div className="max-w-3xl mx-auto text-center mb-16">
-=======
         <motion.div 
           className="max-w-3xl mx-auto text-center mb-16"
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
         >
->>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
           <h2 className="text-3xl font-bold mb-4">Frequently Asked Questions</h2>
           <p className="text-lg text-muted-foreground">
             Got questions about HackForNepal? We've got answers. 
             If you don't find what you're looking for, feel free to contact us.
           </p>
-<<<<<<< HEAD
-        </div>
-
-        <div className="max-w-3xl mx-auto">
-          <Accordion type="single" collapsible className="w-full">
-            {faqItems.map((item, index) => (
-              <AccordionItem key={index} value={`item-${index}`}>
-                <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
-                <AccordionContent>{item.answer}</AccordionContent>
-              </AccordionItem>
-            ))}
-          </Accordion>
-        </div>
-=======
         </motion.div>
 
         <motion.div 
@@ -101,7 +76,6 @@ export default function FAQSection() {
             ))}
           </Accordion>
         </motion.div>
->>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
       </div>
     </div>
   );
