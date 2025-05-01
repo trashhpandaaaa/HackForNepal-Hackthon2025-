@@ -1,4 +1,3 @@
-
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import {
@@ -7,6 +6,7 @@ import {
   AccordionItem,
   AccordionTrigger,
 } from "@/components/ui/accordion";
+import { motion } from "@/components/ui/motion";
 
 const FAQ = () => {
   const faqCategories = [
@@ -19,7 +19,7 @@ const FAQ = () => {
         },
         {
           question: "When and where will HackForNepal take place?",
-          answer: "HackForNepal 2025 will take place on June , 2025 at the Nepal Innovation Hub in NCIT, Lalitpur. The event runs for a full 48 hours, though participants are welcome to take breaks as needed."
+          answer: "HackForNepal 2025 will take place on June 1-2, 2025 at the Nepal Innovation Hub in Kathmandu. The event runs for a full 48 hours, though participants are welcome to take breaks as needed."
         },
         {
           question: "Who can participate in HackForNepal?",
@@ -101,32 +101,55 @@ const FAQ = () => {
       <Navbar />
       <div className="flex-grow py-24 px-4 bg-muted">
         <div className="container mx-auto">
-          <div className="max-w-3xl mx-auto text-center mb-16">
+          <motion.div 
+            className="max-w-3xl mx-auto text-center mb-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6 }}
+          >
             <h1 className="text-3xl font-bold mb-4">Frequently Asked Questions</h1>
             <p className="text-lg text-muted-foreground">
               Find answers to common questions about HackForNepal. If you don't see your question here,
               feel free to reach out to us directly at info@hackfornepal.com.
             </p>
-          </div>
+          </motion.div>
           
           <div className="max-w-3xl mx-auto">
             {faqCategories.map((category, categoryIndex) => (
-              <div key={categoryIndex} className="mb-10">
+              <motion.div 
+                key={categoryIndex} 
+                className="mb-10"
+                initial={{ opacity: 0, y: 15 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: 0.2 + categoryIndex * 0.1 }}
+              >
                 <h2 className="text-2xl font-bold mb-6">{category.title}</h2>
                 <Accordion type="single" collapsible className="w-full">
                   {category.items.map((item, itemIndex) => (
-                    <AccordionItem key={itemIndex} value={`item-${categoryIndex}-${itemIndex}`}>
-                      <AccordionTrigger className="text-left">{item.question}</AccordionTrigger>
-                      <AccordionContent>{item.answer}</AccordionContent>
-                    </AccordionItem>
+                    <motion.div
+                      key={itemIndex}
+                      initial={{ opacity: 0, y: 10 }}
+                      animate={{ opacity: 1, y: 0 }}
+                      transition={{ duration: 0.4, delay: 0.3 + categoryIndex * 0.1 + itemIndex * 0.05 }}
+                    >
+                      <AccordionItem value={`item-${categoryIndex}-${itemIndex}`}>
+                        <AccordionTrigger className="text-left hover:text-primary transition-colors">{item.question}</AccordionTrigger>
+                        <AccordionContent>{item.answer}</AccordionContent>
+                      </AccordionItem>
+                    </motion.div>
                   ))}
                 </Accordion>
-              </div>
+              </motion.div>
             ))}
           </div>
           
-          <div className="max-w-3xl mx-auto mt-16">
-            <div className="bg-card p-6 rounded-lg shadow-sm text-center">
+          <motion.div 
+            className="max-w-3xl mx-auto mt-16"
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.8 }}
+          >
+            <div className="bg-card p-6 rounded-lg shadow-sm text-center hover:shadow-md transition-shadow">
               <h2 className="text-xl font-bold mb-4">Still have questions?</h2>
               <p className="text-muted-foreground mb-6">
                 We're here to help! Contact our support team for any additional questions or clarifications.
@@ -141,7 +164,7 @@ const FAQ = () => {
                 </a>
               </div>
             </div>
-          </div>
+          </motion.div>
         </div>
       </div>
       <Footer />

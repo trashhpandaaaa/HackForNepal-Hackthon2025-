@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 import { useState } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -16,6 +19,10 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { RadioGroup, RadioGroupItem } from "@/components/ui/radio-group";
 import { toast } from "sonner";
+<<<<<<< HEAD
+=======
+import { sendRegistrationConfirmation } from "@/utils/emailService";
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 
 const formSchema = z.object({
   fullName: z.string().min(2, {
@@ -59,6 +66,7 @@ export default function RegistrationForm() {
     },
   });
 
+<<<<<<< HEAD
   function onSubmit(values: z.infer<typeof formSchema>) {
     setIsSubmitting(true);
     
@@ -69,6 +77,39 @@ export default function RegistrationForm() {
       form.reset();
       setIsSubmitting(false);
     }, 1500);
+=======
+  async function onSubmit(values: z.infer<typeof formSchema>) {
+    setIsSubmitting(true);
+    
+    try {
+      console.log(values);
+      
+      // Attempt to send a confirmation email
+      // Note: This won't work in the browser directly due to CORS and security
+      // In production, you would call a backend API that sends the email
+      const emailResult = await sendRegistrationConfirmation(
+        values.email,
+        values.fullName
+      ).catch(error => {
+        console.error("Email sending failed:", error);
+        return { success: false };
+      });
+      
+      if (emailResult?.success) {
+        toast.success("Registration successful! Check your email for confirmation.");
+      } else {
+        // Still show success even if email fails, but log the error
+        toast.success("Registration successful! However, there was an issue sending the confirmation email.");
+      }
+      
+      form.reset();
+    } catch (error) {
+      console.error("Registration error:", error);
+      toast.error("There was an error processing your registration. Please try again.");
+    } finally {
+      setIsSubmitting(false);
+    }
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
   }
 
   return (

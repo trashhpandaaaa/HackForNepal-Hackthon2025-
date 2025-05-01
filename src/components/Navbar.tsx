@@ -1,4 +1,7 @@
+<<<<<<< HEAD
 
+=======
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 import { useState } from 'react';
 import { Menu, X } from 'lucide-react';
 import { Button } from '@/components/ui/button';
@@ -26,6 +29,10 @@ export default function Navbar() {
             <Link to="/" className="nav-link">Home</Link>
             <Link to="/about" className="nav-link">About</Link>
             <Link to="/schedule" className="nav-link">Schedule</Link>
+<<<<<<< HEAD
+=======
+            <Link to="/participants" className="nav-link">Participants</Link>
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
             <Link to="/faq" className="nav-link">FAQ</Link>
             <Link to="/sponsors" className="nav-link">Sponsors</Link>
             <Button asChild className="ml-4">
@@ -51,6 +58,10 @@ export default function Navbar() {
             <Link to="/" className="block py-2 px-4 hover:bg-muted rounded-md" onClick={toggleMenu}>Home</Link>
             <Link to="/about" className="block py-2 px-4 hover:bg-muted rounded-md" onClick={toggleMenu}>About</Link>
             <Link to="/schedule" className="block py-2 px-4 hover:bg-muted rounded-md" onClick={toggleMenu}>Schedule</Link>
+<<<<<<< HEAD
+=======
+            <Link to="/participants" className="block py-2 px-4 hover:bg-muted rounded-md" onClick={toggleMenu}>Participants</Link>
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
             <Link to="/faq" className="block py-2 px-4 hover:bg-muted rounded-md" onClick={toggleMenu}>FAQ</Link>
             <Link to="/sponsors" className="block py-2 px-4 hover:bg-muted rounded-md" onClick={toggleMenu}>Sponsors</Link>
             <div className="px-4 py-2">

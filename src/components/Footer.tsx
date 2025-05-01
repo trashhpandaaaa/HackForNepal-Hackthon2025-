@@ -67,7 +67,11 @@ export default function Footer() {
               </li>
               <li className="text-gray-300">
                 <span className="block">Location:</span>
+<<<<<<< HEAD
                 <span>Lalitpur, Nepal</span>
+=======
+                <span>Kathmandu, Nepal</span>
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
               </li>
             </ul>
           </div>

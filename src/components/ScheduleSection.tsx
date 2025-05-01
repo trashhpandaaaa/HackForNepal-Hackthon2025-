@@ -1,5 +1,10 @@
+<<<<<<< HEAD
 
 import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+=======
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
+import { motion } from "@/components/ui/motion";
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
 
 export default function ScheduleSection() {
   const scheduleData = {
@@ -32,15 +37,35 @@ export default function ScheduleSection() {
   return (
     <div className="py-24 bg-background">
       <div className="container px-4 mx-auto">
+<<<<<<< HEAD
         <div className="max-w-3xl mx-auto text-center mb-16">
+=======
+        <motion.div 
+          className="max-w-3xl mx-auto text-center mb-16"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+        >
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
           <h2 className="text-3xl font-bold mb-4">Event Schedule</h2>
           <p className="text-lg text-muted-foreground">
             A packed 48-hour journey of innovation, learning, and building. 
             Mark your calendar and join us for this transformative experience.
           </p>
+<<<<<<< HEAD
         </div>
 
         <div className="max-w-4xl mx-auto">
+=======
+        </motion.div>
+
+        <motion.div 
+          className="max-w-4xl mx-auto"
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.7, delay: 0.2 }}
+        >
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
           <Tabs defaultValue="day1" className="w-full">
             <TabsList className="grid w-full grid-cols-2 mb-8">
               <TabsTrigger value="day1">Day 1</TabsTrigger>
@@ -50,7 +75,17 @@ export default function ScheduleSection() {
             <TabsContent value="day1" className="pt-4">
               <div className="space-y-8">
                 {scheduleData.day1.map((item, index) => (
+<<<<<<< HEAD
                   <div key={index} className="flex gap-6">
+=======
+                  <motion.div 
+                    key={index} 
+                    className="flex gap-6"
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.1 * index }}
+                  >
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
                     <div className="w-28 shrink-0 text-right">
                       <span className="text-nepal-red font-semibold">{item.time}</span>
                     </div>
@@ -59,7 +94,11 @@ export default function ScheduleSection() {
                       <h3 className="text-lg font-medium mb-1">{item.event}</h3>
                       <p className="text-muted-foreground">{item.description}</p>
                     </div>
+<<<<<<< HEAD
                   </div>
+=======
+                  </motion.div>
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
                 ))}
               </div>
             </TabsContent>
@@ -67,7 +106,17 @@ export default function ScheduleSection() {
             <TabsContent value="day2" className="pt-4">
               <div className="space-y-8">
                 {scheduleData.day2.map((item, index) => (
+<<<<<<< HEAD
                   <div key={index} className="flex gap-6">
+=======
+                  <motion.div 
+                    key={index} 
+                    className="flex gap-6"
+                    initial={{ opacity: 0, x: -10 }}
+                    animate={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.4, delay: 0.1 * index }}
+                  >
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
                     <div className="w-28 shrink-0 text-right">
                       <span className="text-nepal-red font-semibold">{item.time}</span>
                     </div>
@@ -76,12 +125,20 @@ export default function ScheduleSection() {
                       <h3 className="text-lg font-medium mb-1">{item.event}</h3>
                       <p className="text-muted-foreground">{item.description}</p>
                     </div>
+<<<<<<< HEAD
                   </div>
+=======
+                  </motion.div>
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
                 ))}
               </div>
             </TabsContent>
           </Tabs>
+<<<<<<< HEAD
         </div>
+=======
+        </motion.div>
+>>>>>>> 2595e11 (added animations and working on the contant, fixed some bugs and added the page for google forms.)
       </div>
     </div>
   );
