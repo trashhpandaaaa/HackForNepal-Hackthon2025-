@@ -101,7 +101,7 @@ const Sponsors = () => {
                 <HandShake className="text-nepal-red w-8 h-8" />
               </span>
             </motion.div>
-            <h1 className="text-5xl font-bold mb-6 bg-gradient-to-r from-nepal-red to-nepal-blue bg-clip-text text-transparent">
+            <h1 className="text-5xl font-bold mb-6 bg-clip-text text-black">
               Our Sponsors & Partners
             </h1>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
@@ -199,15 +199,6 @@ const Sponsors = () => {
             ))}
           </div>
           
-          {/* Newsletter Signup */}
-          <motion.div 
-            className="max-w-2xl mx-auto mb-32"
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-          >
-            <NewsletterSignup />
-          </motion.div>
           
           {/* Become a Sponsor */}
           <motion.div 
